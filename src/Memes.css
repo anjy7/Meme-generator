@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+	--button-color: #ffffff;
+	--background-color: #8BC6EC;
+	--background-button-color: rgba(180, 147, 216, 0.507);
+	--hover-button-color: black;
+}
+
+.Meme-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80rem;
+    height: 51rem;
+    background-color: var(--background-color);
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    margin: auto;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+input{
+    height: 4rem;
+    width: 20rem;
+    margin-top:2rem;
+    border-radius: .5rem;
+    text-align: center;
+    border: none;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.memes--submit--button {
+	font-size: 1.15rem;
+	font-family: "Roboto", sans-serif;
+	padding: 0.75rem;
+	border-radius: 1.2rem;
+	border: none;
+	background: var(--button-color);
+    width: 10rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.memes--submit--button:hover {
+	cursor: pointer;
+	background: var(--background-button-color);
+	color: var(--hover-button-color);
+}
+
+.meme {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.meme--image {
+    width: 50rem;
+    height: 30rem;
+    border-radius: 3px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
